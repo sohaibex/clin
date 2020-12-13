@@ -1,7 +1,9 @@
 
 #title{
  
-    font-family: 'myFirstFont';
+    font-family: 'droid sans';
+  font-weight: bold;
+  font-style: normal;
     font-size: 130px;
 
 }
@@ -26,7 +28,9 @@ body {
 
 #title2{
  
-    font-family: 'Fonttwo';
+    font-family: 'droid sans ';
+    font-weight: bold;
+    font-style: normal;
     font-size: 75px;
     /* margin-top: 130px; */
 
