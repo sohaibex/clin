@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        THREE.ShapeUtils.triangulateShape = (function () {
+                var pnlTriangulator = new PNLTRI.Triangulator();
+                return function triangulateShape(contour, holes) {
+                    return pnlTriangulator.triangulate_polygon([contour].concat(holes));
+                };
+            })();
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/annmation.css">
-    <link rel="stylesheet" href="fonts/Demo-Balnes.ttf">
+    <link rel="stylesheet" href="fonts/DemoBalnes.ttf">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/annimation.js"></script>
+
+
+
+
+
+<!-- style="background-color: #daa520;" -->
+
+
     <title>Document</title>
 </head>
-<body style="background-color: #daa520;">
+<body style="background-color: #daa520;" >
+
+    
+    <div id="three-container"></div>
+
   <div class="container">
       <div class="col-md-12">
-
-        <h1 class="d-flex justify-content-center"">Clin</h1>
-        <h3 class="d-flex justify-content-center"">Because you are beautiful </h3>
+       
+        <h1 id="title" class="d-flex justify-content-center"> <a href="#" onclick="return  init();"><span id="sp">Clin</span></a> </h1>
+        <p id="title2" class="d-flex justify-content-center"> <span id="sp2">Because you are beautiful</span>   </p>
       </div>
+
+
+    
      
   </div>
 </body>

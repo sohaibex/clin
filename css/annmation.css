@@ -1,7 +1,34 @@
 
-h1{
+#title{
  
     font-family: 'myFirstFont';
+    font-size: 130px;
+
+}
+
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #instructions {
+    position: absolute;
+    color: #666;
+    bottom: 0;
+    padding-bottom: 6px;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+  }
+
+#title2{
+ 
+    font-family: 'Fonttwo';
+    font-size: 75px;
+    /* margin-top: 130px; */
 
 }
 
@@ -16,11 +43,19 @@ h1{
     margin: auto;
 }
 
+h1 a{color: black;}
 
-
+h1 a:hover{color: white;}
 
 @font-face {
+    font-family: Fonttwo;
+src:url("/fonts/RalewayBold.ttf")format("ttf");
+}
+@font-face {
    font-family: myFirstFont;
-   src: url("/fonts/DemoBalnes.ttf") format("ttf");;
+   src: url("/fonts/DemoBalnes.ttf") format("ttf");
   
 }
+
+
+
