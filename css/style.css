@@ -768,7 +768,7 @@ section {
   margin-bottom: 15px;
 }
 .header .container .tagline span {
-  color: #e8293b;
+  color: #daa520;
   float: left;
   font-weight: 600;
   color: #fff;
@@ -779,7 +779,7 @@ section {
   height: 1px;
   float: right;
   margin: 10px;
-  background: #e8293b;
+  background: #daa520;
 }
 .header .container .tagline h6 {
   float: left;
@@ -792,7 +792,7 @@ section {
   width: 100%;
   float: left;
   font-weight: 800;
-  color: #e8293b;
+  color: #daa520;
   font-size: 10vw;
   line-height: 1;
 }
@@ -1302,7 +1302,7 @@ header .sound .equalizer .holder {
   margin-bottom: 15px;
 }
 .swiper-slider .swiper-slide .slide-inner .container .tagline span {
-  color: #e8293b;
+  color: #daa520;
   float: left;
   font-weight: 600;
   color: #fff;
@@ -1313,7 +1313,7 @@ header .sound .equalizer .holder {
   height: 1px;
   float: right;
   margin: 10px;
-  background: #e8293b;
+  background: #daa520;
 }
 .swiper-slider .swiper-slide .slide-inner .container .tagline h6 {
   float: left;
@@ -1326,7 +1326,7 @@ header .sound .equalizer .holder {
   width: 100%;
   float: left;
   font-weight: 800;
-  color: #e8293b;
+  color: #daa520;
   font-size: 10vw;
   line-height: 1;
 }
@@ -1437,7 +1437,7 @@ header .sound .equalizer .holder {
 }
 .intro u {
   text-decoration: none;
-  border-bottom: 3px dotted #e8293b;
+  border-bottom: 3px dotted #daa520;
   font-weight: 600;
 }
 .intro strong {
@@ -2097,7 +2097,7 @@ s .process span:before {
   height: 44px;
   line-height: 44px;
   float: left;
-  background: #e8293b;
+  background: #daa520;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -2240,12 +2240,12 @@ s .process span:before {
   font-weight: 600;
 }
 .hello #contact label.error {
-  color: #e8293b;
+  color: #daa520;
   margin-top: 7px;
   margin-bottom: 0;
 }
 .hello #contact div.error {
-  background: #e8293b;
+  background: #daa520;
   color: #fff;
   border-radius: 0;
   border: none;
