@@ -291,7 +291,7 @@ header{ transform: scale(1.5); @include transition-cubic;
 /* NAVBAR */
 .navbar{width: 100%; position: absolute; left: 0; top: 0; padding: 20px 40px; color: #fff; @include font-two; font-size: 14px;  z-index: 10; transform: translateY(-130%); @include transition-cubic;
 		a{color: #fff; }
-		.left{ width: 30%; margin-left: 0;
+		.left{ width: 35%; margin-left: 0;
 			a{ position: relative; padding-bottom: 6px; @include transition; border-bottom: 2px solid transparent;
 				&:hover{padding-bottom: 1px; border-bottom: 2px solid #fff; text-decoration: none;}}}
 		.logo{margin: 0 auto;
@@ -334,9 +334,9 @@ header{ transform: scale(1.5); @include transition-cubic;
 			.container{transform: translateY(50px); opacity: 0; transition-delay: 0.15s !important; position: relative; z-index: 2;
 				.tagline{display: block; color: #fff; text-transform: uppercase; margin-bottom: 15px;
 					span{ color:$color-red; float: left; font-weight: 600; color: #fff;
-						&:after{content: ""; width: 22px; height: 1px; float:right; margin: 10px; background:$color-red;}}
+						&:after{content: ""; width: 22px; height: 1px; float:right; margin: 10px; background:#daa520;}}
 					h6{ float: left; @include font-two; opacity: 0.5; margin-top: 2px; margin-bottom: 0;}}
-				h1{ width: 100%; float: left; font-weight: 800; color: $color-red; font-size: 10vw; line-height: 1;
+				h1{ width: 100%; float: left; font-weight: 800; color: #daa520; font-size: 10vw; line-height: 1;
 					span{-webkit-text-stroke-width: 1px; transform: translateY(-35%); margin-left: 4%; display: flex;
    -webkit-text-stroke-color: #fff; color:transparent;}}
 				.slide-btn{float: left; }}}}
